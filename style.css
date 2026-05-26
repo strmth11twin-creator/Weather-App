@@ -4,7 +4,157 @@
 
 body {
     margin: 0;
+    background: url(qjxew2o4vXWPjeQvudzw4u4yy5_eCZHBoc97EjBK6YAVqTeolCzW_dcfArrDo1dfGfpJZYs0hdNTxNpcd0Gk4ZBKNc9cJV1iULvajdbHu3cFeZ1L02z_NSRKuHvR9ygF-ZoIgGE5B5A3MYZjUTbxDFj5nfvCc7CB6sAaCP8hTDvY-pgXvnKQ6F60fqhyPhjU.png) center/cover no-repeat;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    background: linear-gradient(1deg, rgb(105, 42, 146) 0%, rgba(41, 108, 163, 0.74) 100%);
+p {
+    margin: 0;
+}
+
+.container {
+    user-select: none;
+    border-radius: 10px;
+    max-width: 360px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.error {
+    display: none;
+    color: #bb4040;
+}
+
+.main {
+    display: none;
+    gap: 20px;
+    margin: 0 0 30px 0;
+}
+
+.main-visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-button {
+    background-color: unset;
+    border: none;
+}
+
+.container_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container_wrapper--icon {
+    width: 20px;
+    height: 22px;
+}
+
+.container_wrapper-input {
+
+    border: none;
+    flex: 1;
+    outline: none;
+    font-size: 20px;
+}
+
+.container_wrapper-input::placeholder {
+    color: #08283d;
+}
+
+.container_wrapper--search-icon {
+    cursor: pointer;
+    object-fit: cover;
+    width: 20px;
+    height: 22px;
+}
+
+.container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.container_content--wearher-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temp {
+    color: #000000;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.name-city {
+    margin: 10px 0 0 0;
+    font-size: 30px;
+}
+
+.container_another-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-box {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_box--humidity {
+    width: 70px;
+    height: 70px;
+}
+
+.humidity {
+    font-size: 22px;
+    color: #000000;
+}
+
+.weaher-humidity {
+    font-size: 18px;
+    color: #000000;
+}
+
+.container-box1 {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_box--wind {
+    width: 70px;
+    height: 70px;
+}
+
+.speed {
+    font-size: 22px;
+    color: #000000;
+}
+
+.weaher-wind {
+    font-size: 18px;
+    color: #000000;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,51 @@
     <script src="script.js" defer></script>
     <title>Weather-App</title>
 </head>
+
 <body>
     <div class="container">
-        
+        <div class="container_wrapper">
+            <svg class="container_wrapper--icon">
+                <use href="location_101996.svg"></use>
+            </svg>
+            <input type="text" class="container_wrapper-input" data-search-input placeholder="Enter Your Location">
+            <button data-search-button class="search-button">
+                <svg class="container_wrapper--search-icon">
+                    <use href="searchmagnifierinterfacesymbol1_79893.svg"></use>
+                </svg>
+            </button>
+        </div>
+
+        <p class="error" data-error>Invalid City Name</p>
+
+        <main class="main" data-main>
+            <div class="container_content">
+                <svg class="container_content--wearher-icon" data-weather-icon>
+                    <use href="sun-black-symboi_icon-icons.com_64259.svg"></use>
+                </svg>
+                <p class="temp" data-temp>11°C</p>
+                <span class="name-city" data-name-city>Berlin</span>
+            </div>
+
+            <div class="container_another-wrapper">
+                <div class="container-box">
+                    <svg class="container_box--humidity">
+                        <use href="humidity_icon_216429.svg"></use>
+                    </svg>
+                    <p class="humidity" data-humidity>87%</p>
+                    <span class="weaher-humidity">Humidity</span>
+                </div>
+
+                <div class="container-box1">
+                    <svg class="container_box--wind">
+                        <use href="wind_icon-icons.com_64274.svg"></use>
+                    </svg>
+                    <p class="speed" data-speed>4.92 km/h</p>
+                    <span class="weaher-wind">Wind speed</span>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
+
 </html>
